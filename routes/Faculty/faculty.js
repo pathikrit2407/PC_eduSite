@@ -1,7 +1,7 @@
-var auth = require('./Auth');
-var express = require('express');
-var router = express.Router(); 
+var express = require('express'); 
+var router = express.Router();
 
-router.use(auth);
+var auth = require('./auth'); 
+router.use(auth); 
 
 module.exports = router; 
